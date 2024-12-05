@@ -1,108 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(180deg, #4F378B 43%, #6E516A 59%, #BC9217 100%, #E8B931 100%);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Garamond, serif;
+      background-color: rebeccapurple;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        .container {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
+    .signin-box {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
 
-        h2 {
-            text-align: center;
-            color: #4F378B;
-        }
+    h2 {
+      margin-bottom: 20px;
+      color: #6a0dad;
+    }
 
-        .input-group {
-            margin-bottom: 20px;
-        }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
 
-        .input-group label {
-            display: block;
-            font-size: 14px;
-            margin-bottom: 5px;
-            color: #333;
-        }
+    label {
+      margin: 10px 0 5px;
+      text-align: left;
+    }
 
-        .input-group input {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+    input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
 
-        .btn {
-            width: 100%;
-            padding: 10px;
-            background-color: #4F378B;
-            color: white;
-            font-size: 16px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+    button {
+      padding: 10px;
+      background-color: rebeccapurple;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
 
-        .btn:hover {
-            background-color: #6E516A;
-        }
+    button:hover {
+      background-color: purple;
+    }
 
-        .links {
-            text-align: center;
-            margin-top: 20px;
-        }
+    .links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
 
-        .links a {
-            color: #4F378B;
-            text-decoration: none;
-            font-size: 14px;
-        }
+    .links a {
+      color: rebeccapurple;
+      text-decoration: none;
+      font-size: 14px;
+    }
 
-        .links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
+  <div class="signin-box">
     <h2>Sign In</h2>
+    <form action="#" method="post">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
 
-    <form>
-        <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="Enter your email">
-        </div>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-        <div class="input-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required placeholder="Enter your password">
-        </div>
-
-        <button type="submit" class="btn">Sign In</button>
+      <button type="submit">Sign In</button>
     </form>
 
     <div class="links">
-        <p><a href="/createaccount1">Create an Account</a></p>
-        <p><a href="/reset-password">Forgot Password?</a></p>
+      <a href="create-account.html">Create Account</a>
+      <a href="forgot-password.html">Forgot Password?</a>
     </div>
-</div>
+  </div>
 
 </body>
 </html>
